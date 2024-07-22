@@ -29,6 +29,16 @@
         width: 100%;
     }
     .Heading {
-        font-family: 'Diodrum-Bold', sans-serif;
+        font-family: 'Diodrum-Medium', sans-serif;
+        font-size: 2vw;
+    }
+    .Navbar {
+        font-family: 'Diodrum-Regular', sans-serif;
+        font-size: 1.1vw;
+    }
+    .Text {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1.1vw;
+        font-weight: 400;
     }
 }
