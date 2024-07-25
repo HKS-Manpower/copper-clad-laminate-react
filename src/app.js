@@ -2,6 +2,8 @@ import { memo } from 'react';
 
 import Routes from '~/routes/routes';
 
+import Footer from '~/components/layout/footer';
+import Header from '~/components/layout/header';
 import Layout from '~/components/layout/layout';
 
 const App = () => {
@@ -9,7 +11,9 @@ const App = () => {
     return (
         <>
             <Layout>
+                <Header />
                 <Routes />
+                <Footer />
             </Layout>
         </>
     );

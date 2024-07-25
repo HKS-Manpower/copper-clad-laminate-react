@@ -31,13 +31,18 @@ export default function Banner() {
                     clickable: true,
                 }}
                 modules={[Autoplay, Pagination]}
-                className="mySwiper h-[80vh] bg-white"
+                className="mySwiper bg-white sm:h-[80vh] @sm:h-[60vh]"
             >
                 {slideData.map((slide) => (
                     <SwiperSlide key={slide.id}>
-                        <div>
+                        <div
+                            className={`relative flex h-full w-full items-center px-32`}
+                        >
+                            <h1 className="font-semibold text-white sm:text-[3.5vw]">
+                                The Copper Clad Laminate
+                            </h1>
                             <img
-                                className="object-contain"
+                                className="absolute left-0 top-0 z-[-1] min-h-full object-cover object-center"
                                 alt="BannerImg"
                                 src={slide.img}
                             />
