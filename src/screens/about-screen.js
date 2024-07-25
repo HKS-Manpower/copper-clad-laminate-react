@@ -15,7 +15,6 @@ const sliderImages = [
 const AboutScreen = () => {
     return (
         <div>
-            <Header />
             <Banner images={sliderImages} />
             <AboutUs aboutData={aboutUsData} orderClass="order-2" />
         </div>
