@@ -2,7 +2,7 @@ import React from 'react';
 
 const CopperHome = () => {
     return (
-        <div className="px-[8%] py-[3%]">
+        <div className="bg-red-200 px-[8%] ">
             <div className="flex lg:flex-row ">
                 <div className="bg-[#141D38] lg:w-[60%]">
                     <p className="text-white">
