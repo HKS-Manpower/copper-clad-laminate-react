@@ -10,14 +10,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import '../../assets/css/swiper.css';
 
-const slideData = [
-    { id: 1, img: '/assets/images/Banner_img1.jpg' },
-    { id: 2, img: '/assets/images/Banner_img1.jpg' },
-    { id: 3, img: '/assets/images/Banner_img1.jpg' },
-    { id: 4, img: '/assets/images/Banner_img1.jpg' },
-];
+// const slideData = [
+//     { id: 1, img: '/assets/images/Banner_img1.jpg' },
+//     { id: 2, img: '/assets/images/Banner_img1.jpg' },
+//     { id: 3, img: '/assets/images/Banner_img1.jpg' },
+//     { id: 4, img: '/assets/images/Banner_img1.jpg' },
+// ];
 
-export default function Banner() {
+export default function Banner({ images }) {
     return (
         <>
             <Swiper
@@ -33,7 +33,7 @@ export default function Banner() {
                 modules={[Autoplay, Pagination]}
                 className="mySwiper h-[80vh] bg-white"
             >
-                {slideData.map((slide) => (
+                {images.map((slide) => (
                     <SwiperSlide key={slide.id}>
                         <div>
                             <img

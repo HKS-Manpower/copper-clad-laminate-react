@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Router, Switch } from 'wouter';
 
 import ErrorScreen from '~/screens/404';
+import AboutScreen from '~/screens/about-screen';
 import HomeScreen from '~/screens/home-screen';
 
 const Routes = () => {
@@ -10,6 +11,7 @@ const Routes = () => {
             <React.Suspense fallback={<h1>Loading....</h1>}>
                 <Switch>
                     <Route exact path="/" component={HomeScreen} />
+                    <Route exact path="/about" component={AboutScreen} />
 
                     {/* if none of the route is matched */}
                     <Route component={ErrorScreen} />

@@ -5,6 +5,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import React from 'react';
+import { Link } from 'wouter';
 
 import Dropdown from '~/components/header/dropdown';
 import SearchBar from '~/components/header/searchbar';
@@ -111,12 +112,16 @@ const Header = () => {
                     />
                 </div>
                 <div className="flex gap-16">
-                    <div className="Navbar">Home</div>
+                    <div className="Navbar">
+                        <Link to="/">Home</Link>
+                    </div>
                     {/* <div>Category</div> */}
                     <Dropdown options={options} onSelect={handleSelect} />
                     <div className="Navbar">Manufactures</div>
                     <div className="Navbar">OEMs</div>
-                    <div className="Navbar">About us</div>
+                    <div className="Navbar">
+                        <Link to="/about">About us</Link>
+                    </div>
                     <div className="Navbar">Contact</div>
                 </div>
 
