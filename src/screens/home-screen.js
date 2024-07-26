@@ -5,9 +5,9 @@ import CopperHome from '~/components/home/copper-home';
 
 const sliderImages = [
     { id: 1, img: '/assets/images/Banner_img1.jpg' },
-    { id: 2, img: '/assets/images/Banner_img1.jpg' },
-    { id: 3, img: '/assets/images/Banner_img1.jpg' },
-    { id: 4, img: '/assets/images/Banner_img1.jpg' },
+    // { id: 2, img: '/assets/images/Banner_img1.jpg' },
+    // { id: 3, img: '/assets/images/Banner_img1.jpg' },
+    // { id: 4, img: '/assets/images/Banner_img1.jpg' },
 ];
 
 const HomeScreen = () => {

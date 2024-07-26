@@ -7,16 +7,16 @@ import Banner from '~/components/home/banner';
 
 const sliderImages = [
     { id: 1, img: '/assets/images/about-banner.png' },
-    { id: 2, img: '/assets/images/about-banner.png' },
-    { id: 3, img: '/assets/images/about-banner.png' },
-    { id: 4, img: '/assets/images/about-banner.png' },
+    // { id: 2, img: '/assets/images/about-banner.png' },
+    // { id: 3, img: '/assets/images/about-banner.png' },
+    // { id: 4, img: '/assets/images/about-banner.png' },
 ];
 
 const AboutScreen = () => {
     return (
         <div>
             <Banner images={sliderImages} />
-            <AboutUs aboutData={aboutUsData} orderClass="order-2" />
+            <AboutUs aboutData={aboutUsData} orderClass={true} />
         </div>
     );
 };

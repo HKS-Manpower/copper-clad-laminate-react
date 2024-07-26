@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AboutUs = ({ aboutData, showOneData }) => {
+const AboutUs = ({ aboutData, showOneData, orderClass }) => {
     const dataToDisplay = showOneData ? aboutData.slice(0, 1) : aboutData;
 
     return (
@@ -10,7 +10,13 @@ const AboutUs = ({ aboutData, showOneData }) => {
                     key={index}
                     className={`flex items-center justify-between ${item.bgColor}`}
                 >
-                    <div className={`mx-auto w-[40%] ${item.orderClass}`}>
+                    <div
+                        className={`mx-auto lg:w-[40%]  ${
+                            orderClass && index === 0
+                                ? 'order-2'
+                                : item.orderClass
+                        }`}
+                    >
                         <h1 className={`Heading ${item.textColor}`}>
                             {item.heading}
                         </h1>
@@ -25,7 +31,7 @@ const AboutUs = ({ aboutData, showOneData }) => {
                             </div>
                         )}
                     </div>
-                    <div className="w-[50%]">
+                    <div className=" bg-yellow-200 lg:w-[53%]">
                         <img alt={item.heading} src={item.imageSrc} />
                     </div>
                 </div>
